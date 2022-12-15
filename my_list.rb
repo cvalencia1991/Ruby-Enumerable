@@ -2,6 +2,8 @@ require_relative 'enumerable'
 
 class Mylist
   include MyEnumerable
+  attr_reader :list
+
   def initialize(*list)
     @list = list
   end
@@ -17,4 +19,4 @@ puts(list.all? { |i| i < 5 })
 puts(list.any? { |i| i > 5 })
 puts(list.any? { |e| e == 2 })
 puts(list.any? { |e| e == 5 })
-puts(list.filter(&:even?))
+p(list.filter(&:even?))
