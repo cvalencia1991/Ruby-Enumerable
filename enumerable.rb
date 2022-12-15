@@ -1,16 +1,20 @@
-class Mylist
-  def initialize(value1,value2,value3, value4)
-   @list = [value1,value2,value3, value4]
-  end
+require 'MyList'
 
-  def MyEnumerable ()
-    list = @list
-    result = list.all? {|e| e < 5}
-    print result
-  end
 
-end
+Mylist.new
 
-list = Mylist.new(1,2,3,4)
+# list = Mylist.new(1,2,3,4)
+# print list
+# list.MyEnumerable
 
-list.MyEnumerable()
+
+
+  # def MyEnumerable
+  #   # list = @list
+  #   # result = list.all? {|e| e < 5}
+  #   # result = list.all? {|e| e > 5}
+  #   # result = list.any? {|e| e == 2}
+  #   # result = list.any? {|e| e == 5}
+  #   result = list.filter {|e| e.even?}
+  #   print result
+  # end
